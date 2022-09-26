@@ -1,6 +1,6 @@
 .section-where-are-you {
   position: relative;
-  background-image: url("/images/bg-curve-desktop.svg");
+  background-image: url("../images/bg-curve-desktop.svg");
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 8rem;
@@ -20,7 +20,7 @@
       rgba($color-white, 0.5) 100%,
       transparent 100%
     ),
-    url("/images/form_background.jpg");
+    url("../images/form_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
