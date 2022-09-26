@@ -1,0 +1,43 @@
+.section-where-are-you {
+  position: relative;
+  background-image: url("/images/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 8rem;
+}
+
+.section-access-today {
+  background-color: $color-desaturated-blue;
+  padding: 8rem 0;
+}
+
+.get-started {
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+  background-image: linear-gradient(
+      rgba($color-white, 0.5) 0%,
+      rgba($color-white, 0.5) 100%,
+      transparent 100%
+    ),
+    url("/images/form_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 1rem 1.5rem rgba($color-black, 0.15);
+  padding: 2rem;
+  height: 10rem;
+
+  &__form {
+    position: absolute;
+    top: 62%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.access-today {
+  padding-left: 5rem;
+}
