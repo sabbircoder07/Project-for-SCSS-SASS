@@ -1,0 +1,78 @@
+.header {
+  margin-bottom: 20rem;
+
+  @include respond(tablet-landscape) {
+    height: 130rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    position: relative;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 2rem;
+  }
+
+  &__image-box {
+    width: 100%;
+    @include respond(tablet-landscape) {
+      position: relative;
+    }
+  }
+  &__image {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    @include respond(tablet-landscape) {
+      width: 80%;
+      margin-top: 0;
+      position: absolute;
+      left: 60%;
+      transform: translate(-50%);
+    }
+    @include respond(tablet-portrait) {
+      left: 50%;
+    }
+    @include respond(phone) {
+      left: 50%;
+    }
+  }
+  &__text-box {
+    padding: 4rem 0;
+    @include respond(tablet-landscape) {
+      width: 80%;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    @include respond(phone) {
+      width: 90%;
+      top: 45%;
+    }
+  }
+  &__visible-for-other {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    @include respond(tablet-landscape) {
+      opacity: 1;
+      visibility: visible;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__visible-for-desktop {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    @include respond(tablet-landscape) {
+      opacity: 0;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.where-are-you {
+  position: relative;
+  &__cntanier {
+    background-color: #f8f8fe;
+    padding-bottom: 8rem;
+    @include respond(tablet-landscape) {
+      height: 140rem;
+      padding-bottom: 4rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      height: 130rem;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+  }
+  &__image-box {
+    width: 100%;
+    text-align: left;
+    @include respond(tablet-landscape) {
+      position: relative;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20%;
+    @include respond(tablet-landscape) {
+      width: 80%;
+      margin-top: 0;
+      position: absolute;
+      left: 60%;
+      transform: translate(-50%);
+    }
+    @include respond(tablet-portrait) {
+      left: 50%;
+    }
+    @include respond(phone) {
+      width: 100%;
+      left: 50%;
+    }
+  }
+  &__text-box {
+    padding: 5rem 0;
+    @include respond(tablet-landscape) {
+      width: 80%;
+      padding: 4rem 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    @include respond(phone) {
+      width: 90%;
+      top: 50%;
+    }
+  }
+
+  &__visible-for-other {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    @include respond(tablet-landscape) {
+      opacity: 1;
+      visibility: visible;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__visible-for-desktop {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    @include respond(tablet-landscape) {
+      opacity: 0;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+}
