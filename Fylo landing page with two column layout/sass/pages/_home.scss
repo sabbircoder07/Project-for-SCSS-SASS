@@ -3,12 +3,18 @@
   background-image: url("../images/bg-curve-desktop.svg");
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 8rem;
+  padding-top: 10rem;
+  @include respond(tablet-landscape) {
+    padding-top: 6rem;
+  }
 }
 
 .section-access-today {
   background-color: $color-desaturated-blue;
   padding: 8rem 0;
+  @include respond(tablet-landscape) {
+    padding: 4rem 0;
+  }
 }
 
 .get-started {
@@ -28,16 +34,53 @@
   padding: 2rem;
   height: 10rem;
 
+  @include respond(tablet-landscape) {
+    width: 80%;
+    padding: 4rem;
+    height: 15rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @include respond(phone) {
+    width: 90%;
+    padding: 1rem !important;
+    height: 20rem;
+    top: 75%;
+  }
+
   &__form {
     position: absolute;
     top: 62%;
-    left: 53%;
+    left: 51%;
     transform: translate(-50%, -50%);
     width: 100%;
     display: inline-block;
+
+    @include respond(tablet-landscape) {
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @include respond(tablet-portrait) {
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @include respond(phone) {
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 .access-today {
   padding-left: 5rem;
+  @include respond(tablet-landscape) {
+    padding-left: 0;
+  }
 }
