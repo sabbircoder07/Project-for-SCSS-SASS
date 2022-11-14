@@ -1,0 +1,25 @@
+@import "./framework/breakpoints";
+
+/*BASE-Base Variables with mixins and palceholders*/
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/placeholders";
+@import "./base/utilities";
+
+/*FRAMEWORK-Structure and layout files*/
+
+@import "./framework/grid";
+@import "./framework/layout";
+
+/*Component-header and another files*/
+
+@import "./components/header";
+@import "./components/button";
+@import "./components/footer";
+@import "./components/keep-track";
+@import "./components/access-clipboard";
+@import "./components/workflow";
+@import "./components/clipboard-for";
