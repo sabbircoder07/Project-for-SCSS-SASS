@@ -1,0 +1,11 @@
+.header {
+  background-image: url("/images/bg-header-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 8rem;
+  @media only screen and (max-width: $bp-small) {
+    background-image: url("/images/bg-header-mobile.png");
+    padding: 4rem;
+  }
+}
