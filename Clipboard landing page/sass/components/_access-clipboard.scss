@@ -1,0 +1,56 @@
+.access-clipboard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 5rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 60%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 80%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+  }
+  &__img-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: $bp-large) {
+      width: 60%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 80%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
