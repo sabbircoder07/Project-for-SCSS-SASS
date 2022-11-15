@@ -1,0 +1,14 @@
+.footer {
+  .attribution {
+    font-size: 12px;
+    text-align: center;
+  }
+  .attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 8px;
+  }
+}
