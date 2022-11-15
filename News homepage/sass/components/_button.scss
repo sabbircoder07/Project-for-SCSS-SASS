@@ -1,0 +1,49 @@
+.btn {
+  border: none;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &__read-more {
+    background-color: var(--color-primary-Soft-red);
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: var(--color-very-dark-blue);
+    animation: pulsate 1s infinite;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+  &__extend {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    padding: 0;
+    font-weight: 700;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
