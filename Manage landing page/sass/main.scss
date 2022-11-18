@@ -1,0 +1,25 @@
+@import "./framework/breakpoints";
+/*BASE-Base Variables with mixins and palceholders*/
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/placeholders";
+@import "./base/utilities";
+
+/*FRAMEWORK-Structure and layout files*/
+
+@import "./framework/grid";
+@import "./framework/layout";
+
+/*Component-header and another files*/
+
+@import "./components/header";
+@import "./components/hero-section";
+@import "./components/button";
+@import "./components/about-manage";
+@import "./components/testimonial";
+@import "./components/team-work";
+@import "./components/footer";
+@import "./components/form";
