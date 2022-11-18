@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  //This defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%; // 1rem = 8px; 8px/16px = 50%
+  }
+}
