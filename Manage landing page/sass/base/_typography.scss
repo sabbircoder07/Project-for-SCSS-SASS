@@ -1,0 +1,70 @@
+:root {
+  --color-primary-bright-red: hsl(12, 88%, 59%);
+  --color-primary-light: #ffa8a8;
+  --color-primary-dark-blue: hsl(228, 39%, 23%);
+  --color-primary-green: #2b8a3e;
+  --color-dark-grayish-blue: hsl(227, 12%, 61%);
+  --color-very-dark-blue: hsl(233, 12%, 13%);
+  --color-very-pale-red: hsl(13, 100%, 96%);
+  --color-vary-light-gray: hsl(0, 0%, 98%);
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: var(--color-very-dark-blue);
+  margin: 0 auto;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.8rem;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.8rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3rem;
+  }
+}
+
+.heading-secondary-white {
+  color: var(--color-white);
+  margin: 0;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.8rem;
+  }
+}
+
+.text-box {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: var(--color-dark-grayish-blue);
+  margin-bottom: 2.8rem;
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 2rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
