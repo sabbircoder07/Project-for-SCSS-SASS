@@ -1,0 +1,23 @@
+.team-work {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15rem;
+  height: 20rem;
+  @media only screen and (max-width: $bp-large) {
+    margin: 0 5rem;
+  }
+  &__heading-box {
+    flex: 0 0 40%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    height: 25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin: 0 2rem;
+  }
+}

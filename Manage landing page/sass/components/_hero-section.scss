@@ -1,0 +1,17 @@
+.hero-section {
+  &__text-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__img-box {
+    max-width: 100%;
+  }
+  .hero-img {
+    height: 55rem;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      height: auto !important;
+    }
+  }
+}
