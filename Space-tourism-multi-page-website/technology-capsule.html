@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Frontend Mentor,Space tourism website" />
+    <meta
+      name="keywords"
+      content="Space tourism website, HTML, CSS, JavaScript, SASS, SCSS"
+    />
+    <meta name="author" content="Frontend Mentor,Coded by sabbir ahmed" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Sabbir Ahmed | Space tourism website</title>
+  </head>
+  <body>
+    <div class="technology-container">
+      <header class="header">
+        <img src="assets/shared/logo.svg" alt="Space tourism" class="logo" />
+        <div class="horizontal-bar">
+          <hr />
+        </div>
+        <div class="nav-bar-mobile nav-mobile-hide">
+          <nav class="nav-mobile">
+            <img
+              src="assets/shared/icon-close.svg"
+              alt="icon close"
+              class="icon-close"
+            />
+            <ul class="moble-nav">
+              <li class="moble-nav__item">
+                <a href="index.html" class="moble-nav__link active">
+                  <span>00</span> Home
+                </a>
+              </li>
+              <li class="moble-nav__item">
+                <a href="destination-moon.html" class="moble-nav__link">
+                  <span>01</span>Destination
+                </a>
+              </li>
+              <li class="moble-nav__item">
+                <a href="crew-commander.html" class="moble-nav__link">
+                  <span>02</span>Crew
+                </a>
+              </li>
+              <li class="moble-nav__item">
+                <a
+                  href="technology-vehicle.html"
+                  class="moble-nav__link active"
+                >
+                  <span>03</span>Technology
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-bar">
+          <img
+            src="assets/shared/icon-hamburger.svg"
+            alt="icon-hamburger"
+            class="icon-hamburger"
+          />
+          <nav class="nav">
+            <ul class="header-nav">
+              <li class="header-nav__item">
+                <a href="index.html" class="header-nav__link">
+                  <span>00</span> Home
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a href="destination-moon.html" class="header-nav__link">
+                  <span>01</span>Destination
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a href="crew-commander.html" class="header-nav__link">
+                  <span>02</span>Crew
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a
+                  href="technology-vehicle.html"
+                  class="header-nav__link active"
+                >
+                  <span>03</span>Technology
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="technology-details-container">
+          <div class="subheading-box">
+            <div class="subheading-primary">
+              <span class="subheading-no">03</span>Space launch 101
+            </div>
+          </div>
+          <div class="technology-details">
+            <div class="technology-details__box">
+              <div class="technology-details__text-box">
+                <div class="technology-details__options">
+                  <a href="technology-vehicle.html" class="options-link"
+                    ><span class="optins-item">1</span></a
+                  >
+                  <a href="technology-spaceport.html " class="options-link"
+                    ><span class="optins-item">2</span></a
+                  >
+                  <a href="technology-capsule.html" class="options-link active"
+                    ><span class="optins-item">3</span></a
+                  >
+                </div>
+                <div class="technology-details__text">
+                  <h4 class="heading-quartary subheading-color-light">
+                    The terminology...
+                  </h4>
+                  <h3 class="heading-tertiary">Space capsule</h3>
+                  <div class="paragraph-text-box">
+                    <p class="paragraph">
+                      A space capsule is an often-crewed spacecraft that uses a
+                      blunt-body reentry capsule to reenter the Earth's
+                      atmosphere without wings. Our capsule is where you'll
+                      spend your time during the flight. It includes a space
+                      gym, cinema, and plenty of other activities to keep you
+                      entertained.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="technology-details__img-box">
+              <img
+                src="assets/technology/image-space-capsule-portrait.jpg"
+                alt="Launch Vehicle"
+                class="technology-details__img"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+      function myFunction(x) {
+        const technologyDetailsImg = document.querySelector(
+          ".technology-details__img"
+        );
+        if (x.matches) {
+          // If media query matches
+          technologyDetailsImg.src =
+            "assets/technology/image-space-capsule-landscape.jpg";
+          console.log(technologyDetailsImg);
+        } else {
+          technologyDetailsImg.src =
+            "assets/technology/image-space-capsule-portrait.jpg";
+        }
+      }
+      var x = window.matchMedia("(max-width: 900px)");
+      myFunction(x); // Call listener function at run time
+      x.addListener(myFunction); // Attach listener function on state changes
+    </script>
+  </body>
+</html>

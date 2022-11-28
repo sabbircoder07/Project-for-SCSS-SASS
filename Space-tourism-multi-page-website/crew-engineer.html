@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!DOCTYPE html>
+    <html lang="en">
+      <meta charset="UTF-8" />
+      <meta name="description" content="Frontend Mentor,Space tourism website" />
+        <meta
+          name="keywords"
+          content="Space tourism website, HTML, CSS, JavaScript, SASS, SCSS"
+        />
+        <meta name="author" content="Frontend Mentor,Coded by sabbir ahmed" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./assets/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+          rel="stylesheet"
+        />
+    
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Frontend Mentor | Sabbir Ahmed | Space tourism website</title>
+      </head>
+      <body>
+        <div class="crew-container">
+          <header class="header">
+            <img src="assets/shared/logo.svg" alt="Space tourism" class="logo" />
+            <div class="horizontal-bar">
+              <hr />
+            </div>
+            <div class="nav-bar-mobile nav-mobile-hide">
+              <nav class="nav-mobile">
+                <img
+                  src="assets/shared/icon-close.svg"
+                  alt="icon close"
+                  class="icon-close"
+                />
+                <ul class="moble-nav">
+                  <li class="moble-nav__item">
+                    <a href="index.html" class="moble-nav__link">
+                      <span>00</span> Home
+                    </a>
+                  </li>
+                  <li class="moble-nav__item">
+                    <a href="destination-moon.html" class="moble-nav__link">
+                      <span>01</span>Destination
+                    </a>
+                  </li>
+                  <li class="moble-nav__item">
+                    <a href="crew-commander.html" class="moble-nav__link active">
+                      <span>02</span>Crew
+                    </a>
+                  </li>
+                  <li class="moble-nav__item">
+                    <a href="technology-vehicle.html" class="moble-nav__link">
+                      <span>03</span>Technology
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="nav-bar">
+              <img
+                src="assets/shared/icon-hamburger.svg"
+                alt="icon-hamburger"
+                class="icon-hamburger"
+              />
+              <nav class="nav">
+                <ul class="header-nav">
+                  <li class="header-nav__item">
+                    <a href="index.html" class="header-nav__link">
+                      <span>00</span> Home
+                    </a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="destination-moon.html" class="header-nav__link">
+                      <span>01</span>Destination
+                    </a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="crew-commander.html" class="header-nav__link active">
+                      <span>02</span>Crew
+                    </a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a href="technology-vehicle.html" class="header-nav__link">
+                      <span>03</span>Technology
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+          <main class="main">
+            <div class="crew-details-container">
+              <div class="crew-details">
+                <div class="subheading-box">
+                  <div class="subheading-primary">
+                    <span class="subheading-no">02</span>Meet your crew
+                  </div>
+                </div>
+                <div class="crew-details__box">
+                  <div class="crew-details__information">             
+                  <h4 class="heading-quartary subheading-color-light">Flight Engineer</h4>
+                  <h3 class="heading-tertiary">Anousheh Ansari</h3>
+                  <div class="paragraph-text-box">
+                  <p class="paragraph">
+                    Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+                    Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+                    fly to the ISS, and the first Iranian in space..
+                  </p>
+                </div>
+                  <div class="crew-details__options">
+                    <a href="crew-commander.html" class="options-link"><span class="optins-item"></span></a>
+                    <a href="crew-specialist.html" class="options-link"><span class="optins-item"></span></a>
+                    <a href="crew-pilot.html" class="options-link"><span class="optins-item"></span></a>
+                    <a href="crew-engineer.html" class="options-link atcive"><span class="optins-item"></span></a>
+                  </div>
+                </div>
+                <div class="crew-details__img-box">
+                  <img
+                  src="assets/crew/image-anousheh-ansari.png"
+                  alt="Anousheh Ansari"
+                  class="crew-details__img"
+                />
+                </div>
+              </div>
+              </div>
+            </div>
+          </main>
+          <footer class="footer"></footer>
+        </div>
+        <script src="js/script.js"></script>
+        <script>
+          function myFunction(x) {
+            const crewDetailsImg = document.querySelector(
+              ".crew-details__img"
+            );
+            if (x.matches) {
+              // If media query matches
+              crewDetailsImg.src = "assets/crew/image-anousheh-ansari.webp";
+              console.log(crewDetailsImg);
+            } else {
+              crewDetailsImg.src = "assets/crew/image-anousheh-ansari.png";
+            }
+          }
+          var x = window.matchMedia("(max-width: 600px)");
+          myFunction(x); // Call listener function at run time
+          x.addListener(myFunction); // Attach listener function on state changes
+        </script>
+      </body>
+    </html>
+    
