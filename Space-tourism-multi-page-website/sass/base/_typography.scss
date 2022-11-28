@@ -1,0 +1,132 @@
+:root {
+  --color-primary: hsl(230, 35%, 7%);
+  --color-primary-dark: #495057;
+  --color-primary-light: hsl(231, 77%, 90%);
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --shadow-dark: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  margin: 0 auto;
+}
+
+.heading-primary {
+  font-family: "Bellefair", serif;
+  font-size: 15rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 8rem;
+  }
+}
+
+.heading-secondary {
+  font-family: "Bellefair", serif;
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 8rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 5.6rem;
+  }
+}
+
+.heading-tertiary {
+  font-family: "Bellefair", serif;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 1.8rem;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.2rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 2.4rem;
+  }
+}
+
+.heading-quartary {
+  font-family: "Bellefair", serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 1.8rem;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.6rem;
+  }
+}
+
+.subheading-primary {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 1.8rem;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+}
+
+.subheading-no {
+  color: var(--color-primary-dark);
+  margin-right: 0.8rem;
+}
+
+.subheading-color-light {
+  color: var(--color-primary-light);
+}
+
+.subheading-heading-secondary {
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-size: 1.4rem;
+  color: var(--color-primary-light);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 1.8rem;
+}
+
+.paragraph-text-box {
+  width: 75%;
+  @media only screen and (max-width: $bp-medium) {
+    width: 50%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--color-primary-light);
+}
+
+.text-center {
+  text-align: center;
+}
