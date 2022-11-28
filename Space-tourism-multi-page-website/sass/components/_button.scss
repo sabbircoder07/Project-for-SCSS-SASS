@@ -2,6 +2,7 @@
   &,
   &:link,
   &:visited {
+    color: var(--color-primary);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 3.2rem;
@@ -18,6 +19,6 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 0 0 5rem rgba(11, 13, 23, 0.3);
+    box-shadow: 0 0 0 5rem rgba(11, 13, 23, 0.4);
   }
 }
