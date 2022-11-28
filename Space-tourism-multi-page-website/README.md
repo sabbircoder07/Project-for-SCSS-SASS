@@ -1,3 +1,8 @@
+# npm install
+# npm run start // For Development
+# npm run bulid.css // For Production
+
+
 # Frontend Mentor - Space tourism website
 
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
