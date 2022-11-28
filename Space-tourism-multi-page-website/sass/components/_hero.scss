@@ -1,0 +1,54 @@
+.hero {
+  max-width: 144rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15rem;
+  gap: 20rem;
+
+  @media only screen and (max-width: $bp-large) {
+    gap: 15rem;
+    margin: 0 10rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    gap: 0;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__text-box {
+    flex: 1;
+    margin: 15rem 0;
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 8rem;
+      margin-bottom: 10rem;
+    }
+  }
+  .paragraph-text-box {
+    width: 100%;
+    display: inline-block;
+    @media only screen and (max-width: $bp-medium) {
+      width: 50%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+  }
+  &__cta {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15rem 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0;
+      margin-bottom: 10rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 5rem;
+    }
+  }
+}

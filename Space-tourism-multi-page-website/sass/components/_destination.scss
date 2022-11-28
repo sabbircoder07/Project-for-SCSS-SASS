@@ -1,0 +1,178 @@
+.destination-details {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__img-box {
+    width: 100%;
+    flex: 1;
+  }
+
+  &__img {
+    width: 45rem;
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    flex: 1;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .destination-nav {
+    color: var(--color-white);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+  }
+
+  .destination-details-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      gap: 4rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 1.4rem;
+    }
+
+    &__item {
+      position: relative;
+      color: var(--color-white);
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+
+    &__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 1px;
+      border-bottom: 3px solid var(--color-white);
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+        background-color 0.2s;
+    }
+
+    &__item:hover::before {
+      transform: scaleY(1);
+      width: 100%;
+      text-align: center;
+    }
+
+    &__item:active::before {
+      background-color: var(--color-white);
+    }
+
+    &__link:link,
+    &__link:visited {
+      font-size: 1.6rem;
+      letter-spacing: 2.7px;
+      color: var(--color-white);
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      padding: 1.8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      z-index: 100;
+    }
+
+    &__link:hover,
+    &__link:active {
+      color: var(--color-white);
+    }
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid var(--color-primary-light);
+    margin-top: 4rem;
+    width: 70%;
+    @media only screen and (max-width: $bp-medium) {
+      width: 60%;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 2.8rem;
+    justify-content: flex-start;
+    margin-bottom: 10rem;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  &__margin-reset {
+    margin: 0;
+  }
+  &__option-one {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  &__option-two {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .active {
+    border-bottom: 3px solid var(--color-white);
+  }
+}
+
+.subheading-box {
+  margin: 4rem 0;
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    text-align: left;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+}

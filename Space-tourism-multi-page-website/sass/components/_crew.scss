@@ -1,0 +1,90 @@
+.crew-details {
+  display: flex;
+  flex-direction: column;
+
+  &__box {
+    width: 100%;
+    display: flex;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      align-items: center;
+    }
+  }
+  &__img-box {
+    flex: 1;
+    margin-top: -10rem;
+    margin-bottom: -1px;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      margin-top: 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin: 0;
+      text-align: center;
+      order: -1;
+    }
+  }
+  &__img {
+    width: 51.4rem;
+    height: auto;
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__options {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10rem;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      margin: 5rem 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+      order: -1;
+    }
+  }
+  .options-link {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--color-primary-dark);
+    transition: all 0.2s;
+  }
+  .options-link:hover {
+    background-color: var(--color-white);
+    transform: translateY(-2px) scale(1.05);
+  }
+  .atcive {
+    background-color: var(--color-white);
+  }
+  .subheading-box {
+    margin: 4rem 0;
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0;
+      margin-top: 5rem;
+      margin-bottom: 8rem;
+      text-align: left;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+  }
+}

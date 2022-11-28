@@ -1,0 +1,112 @@
+.technology-details {
+  display: flex;
+  gap: 5rem;
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    gap: 0;
+    align-items: center;
+  }
+  &__box {
+    width: 100%;
+    margin-top: 10rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 0;
+    }
+  }
+  &__img-box {
+    width: 100%;
+    margin-bottom: 10rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: flex-end;
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    @media only screen and (max-width: $bp-medium) {
+      height: 40rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      height: 30rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      height: 25rem;
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__text {
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .options-link {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--color-white);
+    border: 1px solid var(--color-primary-dark);
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0.04);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .options-link:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-2px) scale(1.05);
+  }
+  .active {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  .paragraph-text-box {
+    width: 100%;
+    @media only screen and (max-width: $bp-medium) {
+      width: 60%;
+      margin-bottom: 10rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 95%;
+    }
+  }
+}
+.subheading-box {
+  @media only screen and (max-width: $bp-medium) {
+    margin-left: 5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    text-align: center;
+  }
+}
