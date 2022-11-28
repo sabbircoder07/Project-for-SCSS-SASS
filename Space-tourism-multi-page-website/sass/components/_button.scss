@@ -1,0 +1,23 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 27.4rem;
+    height: 27.4rem;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all 0.2s;
+  }
+
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 0 5rem rgba(11, 13, 23, 0.3);
+  }
+}
