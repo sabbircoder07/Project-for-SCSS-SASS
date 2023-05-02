@@ -1,0 +1,19 @@
+.about-easy-bank {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  &__option-box {
+    display: flex;
+    gap: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__text-box {
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+  }
+}
