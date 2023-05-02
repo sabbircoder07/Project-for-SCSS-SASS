@@ -1,0 +1,77 @@
+:root {
+  --color-primary-dark-blue: hsl(233, 26%, 24%);
+  --color-primary-lime-green: hsl(136, 65%, 51%);
+  --color-primary-bright-cyan: hsl(192, 70%, 51%);
+
+  --color-grayish-blue: hsl(233, 8%, 62%);
+  --color-light-grayish-blue: hsl(220, 16%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: var(--color-primary-dark-blue);
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: capitalize;
+  margin-bottom: 2.8rem;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.8rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3rem;
+  }
+}
+
+.heading-secondary-white {
+  color: var(--color-white);
+  margin: 0;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.8rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--color-grayish-blue);
+  margin-bottom: 2.8rem;
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 2rem;
+  }
+}
+.paragraph-text-box {
+  width: 50%;
+  @media only screen and (max-width: $bp-medium) {
+    text-align: center;
+    width: 100%;
+  }
+}
+.text-center {
+  text-align: center;
+}
