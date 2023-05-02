@@ -1,0 +1,56 @@
+.btn {
+  border: none;
+  color: var(--color-white);
+  font-size: inherit;
+  padding: 1.4rem 2.8rem;
+  border-radius: 100px;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 1rem 1rem rgba(var(--color-primary-bright-cyan), 0.8);
+  transition: all 0.2s;
+
+  &__request-invite {
+    background: linear-gradient(
+      to right,
+      var(--color-primary-lime-green),
+      var(--color-primary-bright-cyan)
+    );
+  }
+
+  &__get-started-white {
+    background-color: var(--color-white);
+    color: var(--color-primary-bright-red);
+  }
+  &:hover {
+    transform: translateY(-3px);
+    animation: pulsate 1s infinite;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+  &__extend {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

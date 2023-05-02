@@ -1,0 +1,107 @@
+.header {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 2.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-2px) scale(1.08);
+    }
+  }
+
+  .icon-hamburger {
+    display: none;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+      opacity: 1;
+      height: 2.8rem;
+      width: 100%;
+      height: auto;
+      &:hover {
+        transform: translateY(-2px) scale(1.08);
+      }
+    }
+  }
+
+  .navbar {
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+  }
+  .button-cta {
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+  }
+
+  .header-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &__item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+    }
+
+    &__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 1px;
+      border-bottom: 4px solid var(--color-primary-bright-cyan);
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+        background-color 0.2s;
+    }
+
+    &__item:hover::before {
+      transform: scaleY(1);
+      width: 100%;
+      border-radius: 2px;
+    }
+
+    &__item:active::before {
+      background-color: var(--color-primary-bright-cyan);
+    }
+
+    &__link:link,
+    &__link:visited {
+      font-size: 1.8rem;
+      color: var(--color-very-dark-blue);
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: block;
+      padding: 2rem 2px;
+      display: flex;
+      align-items: center;
+      gap: 3.6rem;
+      position: relative;
+      z-index: 100;
+    }
+
+    &__link:hover,
+    &__link:active {
+      color: var(--color-primary-dark-blue);
+    }
+  }
+}
