@@ -1,0 +1,50 @@
+.header {
+  height: 8rem;
+  margin: 0 12rem;
+  margin-top: 1rem;
+  position: relative;
+  background-color: var(--color-very-light-gray);
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0 8rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 0 4rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin: 0 2rem;
+  }
+}
+.about-easy-bank {
+  background-color: var(--color-light-grayish-blue);
+  margin-top: -15rem;
+  position: relative;
+  z-index: 2;
+  padding: 10rem 12rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 10rem 8rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 10rem 4rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 10rem 2rem;
+  }
+}
+.articles-easy-bank {
+  padding: 10rem 12rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 10rem 8rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 10rem 4rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 10rem 2rem;
+  }
+}
