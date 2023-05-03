@@ -1,7 +1,7 @@
 .header {
   height: 8rem;
   margin: 0 12rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   position: relative;
   background-color: var(--color-very-light-gray);
 
@@ -21,7 +21,7 @@
   margin-top: -15rem;
   position: relative;
   z-index: 2;
-  padding: 10rem 12rem;
+  padding: 6rem 12rem;
 
   @media only screen and (max-width: $bp-largest) {
     padding: 10rem 8rem;
@@ -35,16 +35,16 @@
   }
 }
 .articles-easy-bank {
-  padding: 10rem 12rem;
+  padding: 6rem 12rem;
 
   @media only screen and (max-width: $bp-largest) {
-    padding: 10rem 8rem;
+    padding: 5rem 8rem;
   }
 
   @media only screen and (max-width: $bp-large) {
-    padding: 10rem 4rem;
+    padding: 5rem 4rem;
   }
   @media only screen and (max-width: $bp-small) {
-    padding: 10rem 2rem;
+    padding: 5rem 2rem;
   }
 }
