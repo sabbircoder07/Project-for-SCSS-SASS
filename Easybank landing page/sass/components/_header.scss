@@ -5,7 +5,7 @@
   align-items: center;
 
   .logo {
-    height: 2.8rem;
+    height: 2.4rem;
     cursor: pointer;
     transition: all 0.2s;
     &:hover {
@@ -21,7 +21,7 @@
     @media only screen and (max-width: $bp-medium) {
       display: block;
       opacity: 1;
-      height: 2.8rem;
+      height: 2.4rem;
       width: 100%;
       height: auto;
       &:hover {
@@ -86,8 +86,8 @@
     &__link:link,
     &__link:visited {
       font-size: 1.8rem;
-      color: var(--color-very-dark-blue);
-      font-weight: 500;
+      color: var(--color-grayish-blue);
+      font-weight: 400;
       text-decoration: none;
       text-transform: capitalize;
       display: block;

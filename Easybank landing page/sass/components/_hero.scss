@@ -16,7 +16,7 @@
     margin-left: 0;
   }
   @media only screen and (max-width: $bp-small) {
-    margin-left: 2rem;
+    margin-left: 0;
   }
 
   &__text-box {
@@ -29,6 +29,7 @@
       align-items: center;
       width: 100%;
       margin-bottom: 20rem;
+      margin: 0 2rem;
     }
   }
   .paragraph-text-box {
@@ -43,12 +44,12 @@
     margin-top: 0;
   }
   &__image-box {
-    background-image: url("/images/bg-intro-desktop.svg");
+    background-image: url("../images/bg-intro-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     @media only screen and (max-width: $bp-medium) {
-      background-image: url("/images/bg-intro-mobile.svg");
+      background-image: url("../images/bg-intro-mobile.svg");
     }
   }
   &__img {

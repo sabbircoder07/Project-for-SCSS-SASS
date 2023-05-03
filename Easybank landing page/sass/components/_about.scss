@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
-
   &__option-box {
     display: flex;
     gap: 2rem;
@@ -10,6 +9,9 @@
       flex-direction: column;
       text-align: center;
     }
+  }
+  &__option-img {
+    margin-bottom: 2rem;
   }
   &__text-box {
     @media only screen and (max-width: $bp-medium) {
