@@ -25,10 +25,10 @@ body {
 .heading-tertiary {
   color: var(--color-primary-dark-blue);
   font-size: 5.2rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.1;
   text-transform: capitalize;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2rem;
   @media only screen and (max-width: $bp-small) {
     font-size: 4.2rem;
     margin-bottom: 2rem;
@@ -37,10 +37,10 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.8rem;
+  font-size: 4.2rem;
 
   @media only screen and (max-width: $bp-small) {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -50,17 +50,17 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   @media only screen and (max-width: $bp-small) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
 .paragraph {
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: 1.4;
   color: var(--color-grayish-blue);
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.6rem;
   @media only screen and (max-width: $bp-medium) {
     margin-bottom: 2rem;
   }
@@ -74,4 +74,7 @@ body {
 }
 .text-center {
   text-align: center;
+}
+.margin-1 {
+  margin-bottom: 0.5rem;
 }
