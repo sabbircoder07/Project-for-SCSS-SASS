@@ -1,0 +1,29 @@
+.results-summary-container {
+  display: flex;
+  width: 76%;
+  gap: 2rem;
+  border-radius: 30px;
+  box-shadow: 1rem 3rem 3rem rgba(120, 87, 255, 0.3);
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    border-radius: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @media only screen and (max-width: $bp-smaller) {
+  }
+  @media only screen and (max-width: $bp-smallest) {
+  }
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+  }
+}
