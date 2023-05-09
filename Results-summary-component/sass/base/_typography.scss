@@ -1,0 +1,92 @@
+:root {
+  //Primary
+  --color-primary-Light-red: hsl(0, 100%, 67%);
+  --color-primary-Orangey-yellow: hsl(39, 100%, 56%);
+  --color-primary-Green-teal: hsl(166, 100%, 37%);
+  --color-primary-Cobalt-blue: hsl(234, 85%, 45%);
+
+  //Gradients
+  --color-gradients-Light-slate-blue-background: hsl(252, 100%, 67%);
+  --color-gradients-Light-royal-blue-background: hsl(241, 81%, 54%);
+  --color-gradients-Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --color-gradients-Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  //Neutral
+  --color-White: hsl(0, 0%, 100%);
+  --color-Pale-blue: hsl(221, 100%, 96%);
+  --color-Light-lavender: hsl(241, 100%, 89%);
+  --color-Light-Dark-gray-blue: hsl(224, 30%, 27%);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  --color-primary-Light-red-light: #ff57570d;
+  --color-primary-Orangey-yellow-light: #ffb11f1a;
+  --color-primary-Green-teal-light: #00bd910d;
+  --color-primary-Cobalt-blue-light: #1124d412;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  max-width: 144rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: var(--color-White);
+  text-transform: capitalize;
+  margin-bottom: 1.8rem;
+}
+
+.heading-primary {
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+
+.heading-secondary--blue {
+  color: var(--color-Light-Dark-gray-blue);
+}
+
+.heading-tertiary {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--color-Light-lavender);
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: var(--color-Light-lavender);
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 2rem;
+  }
+}
+.paragraph-text-box {
+  width: 50%;
+  @media only screen and (max-width: $bp-medium) {
+    text-align: center;
+    width: 100%;
+  }
+}
+.text-center {
+  text-align: center;
+}
+.margin-1 {
+  margin-bottom: 0.5rem;
+}
