@@ -30,6 +30,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
     .result {
       margin-top: -4.8rem;
@@ -47,24 +48,33 @@
     gap: 1.8rem;
   }
   .result-option {
-    width: 35rem;
+    width: 38rem;
     height: 5rem;
     background-color: var(--color-primary-Light-red-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.8rem;
+    padding: 2rem;
     border-radius: 8px;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-land) {
+      width: 33rem;
+    }
+
     @media only screen and (max-width: $bp-small) {
       width: 58rem;
     }
-
     @media only screen and (max-width: $bp-smaller) {
       width: 50rem;
     }
 
     @media only screen and (max-width: $bp-smallest) {
-      width: 38rem;
+      width: 40rem;
     }
   }
   .result-option-memory {
@@ -103,24 +113,20 @@
   }
   .btn {
     width: 100%;
-    padding: 1.2rem;
+    padding: 1.6rem;
     color: var(--color-White);
     background-color: var(--color-Light-Dark-gray-blue);
     border: none;
     border-radius: 30px;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-weight: 500;
     margin-top: 3rem;
     cursor: pointer;
     transition: all 0.2s;
 
     @media only screen and (max-width: $bp-small) {
-      margin-bottom: 2rem;
-    }
-    @media only screen and (max-width: $bp-smaller) {
-      margin-bottom: 2rem;
-    }
-    @media only screen and (max-width: $bp-smallest) {
       margin-bottom: 2rem;
     }
   }
