@@ -1,0 +1,39 @@
+:root {
+  //Primary
+  --primary-color-light-cyan: hsl(193, 38%, 86%);
+  --primary-color-neon-green: hsl(150, 100%, 66%);
+
+  // Neutral
+  --neutral-color-grayish-blue: hsl(217, 19%, 38%);
+  --neutral-color-grayish-blue: hsl(217, 19%, 24%);
+  --neutral-color-dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+  background-color: var(--neutral-color-dark-blue);
+  font-family: "Manrope", sans-serif;
+  max-width: 144rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.heading-primary {
+  color: var(--primary-color-light-cyan);
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 3rem 0;
+  letter-spacing: 1px;
+  text-wrap: balance;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: var(--primary-color-neon-green);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
