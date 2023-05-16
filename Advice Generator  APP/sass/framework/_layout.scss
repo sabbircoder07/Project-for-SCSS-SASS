@@ -1,0 +1,21 @@
+.advice-container {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  height: auto;
+  background-color: var(--neutral-color-grayish-blue);
+  border-radius: 10px;
+  box-shadow: 0.8rem 0.8rem 0.8rem var(--primary-color-neon-green);
+  padding: 3rem 3rem 0 3rem;
+  text-align: center;
+  align-items: center;
+  @media only screen and (max-width: $bp-smaller) {
+    width: 100%;
+    margin: 0 2rem;
+  }
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
